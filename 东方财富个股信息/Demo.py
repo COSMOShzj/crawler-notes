@@ -1,8 +1,3 @@
-"""
-@User : 'cosmos'
-@Date : '2025/2/13'
-@Time : '下午11:57'
-"""
 import csv
 
 import execjs
@@ -10,27 +5,13 @@ import requests
 import re
 import pandas
 cookies = {
-    'qgqp_b_id': '17ce4ba7fb740dad2828f4cf7e9697cc',
-    'websitepoptg_api_time': '1739459190989',
-    'st_si': '90045857175579',
-    'st_asi': 'delete',
-    'fullscreengg': '1',
-    'fullscreengg2': '1',
-    'st_pvi': '30256184217229',
-    'st_sp': '2025-02-13%2023%3A06%3A31',
-    'st_inirUrl': 'https%3A%2F%2Fwww.baidu.com%2Flink',
-    'st_sn': '4',
-    'st_psi': '20250213231357602-117001314791-8676583986',
+
 }
 
 headers = {
     'Accept': '*/*',
     'Accept-Language': 'zh-CN,zh;q=0.9',
     'Connection': 'keep-alive',
-    # 'Cookie': 'qgqp_b_id=17ce4ba7fb740dad2828f4cf7e9697cc; websitepoptg_api_time=1739459190989;
-    # st_si=90045857175579; st_asi=delete; fullscreengg=1; fullscreengg2=1; st_pvi=30256184217229;
-    # st_sp=2025-02-13%2023%3A06%3A31; st_inirUrl=https%3A%2F%2Fwww.baidu.com%2Flink; st_sn=4;
-    # st_psi=20250213231357602-117001314791-8676583986',
     'Referer': 'https://guba.eastmoney.com/',
     'Sec-Fetch-Dest': 'script',
     'Sec-Fetch-Mode': 'no-cors',
@@ -50,7 +31,7 @@ for page in range(5):
         'v': '2025_2_14_18_0',
     }
     # 第一次请求 获取服务器返回的密文数据
-    response = requests.get('https://gbcdn.dfcfw.com/rank/popularityList.js', params=params, headers=headers)
+    response = requests.get('https://gbcdn.dfcfw.com/接口', params=params, headers=headers)
     # print(response.text)
     data = re.findall(r"var popularityList='(.*?)'", response.text)[0]
     # print(data)
@@ -72,8 +53,7 @@ for page in range(5):
 
 #  第二次请求 获取股票代码
     response = requests.get(
-        'https://push2.eastmoney.com/api/qt/ulist.np/get?fltt=2&np=3&ut=a79f54e3d4c8d44e494efb8f748db291&invt=2'
-        '&secids={}&fields=f1,f2,f3,f4,f12,f13,f14,f152,f15,f16'.format(
+        'https://push2.eastmoney.com/api接口?参数'.format(
             secids),
         cookies=cookies,
         headers=headers,
