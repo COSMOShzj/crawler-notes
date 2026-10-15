@@ -1,8 +1,3 @@
-"""
-@User : 'cosmos'
-@Date : '2025/10/28'
-@Time : '下午8:45'
-"""
 import re
 import csv
 import json
@@ -34,8 +29,8 @@ headers = {
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
     "x-requested-with": "XMLHttpRequest"
 }
-first_url = "https://qikan.cqvip.com/Qikan/Journal/JournalGuid"
-two_url = "https://qikan.cqvip.com/Search/SearchList"
+first_url = "https://qikan.cqvip.com/接口1"
+two_url = "https://qikan.cqvip.com/接口2"
 params = {
     "from": "index"
 }
