@@ -2,25 +2,20 @@
 
 > Python 爬虫 · JS / APP 逆向 · 数据清洗与接口服务
 >
-> 2026 届计算机本科｜主攻采集 → 逆向 → 清洗入库 → API 输出的完整数据链路
+> 2026 届计算机本科｜主攻采集 → 逆向 → 清洗入库
 
 ## 🧰 技术栈
 
 | 方向 | 工具 / 技术 |
 |---|---|
-| 爬虫框架 | Scrapy / Playwright / Requests |
+| 爬虫框架 | Scrapy
 | 逆向分析 | DevTools 抓包 · JS 混淆还原 · execjs · Frida · Jadx |
 | 数据处理 | Pandas · NumPy · MySQL · Redis（去重 / 任务队列） |
-| 接口服务 | FastAPI（爬虫结果对外输出） |
 | 工程基础 | Git · Linux · Docker · Charles / Fiddler |
 
 ## 📁 仓库说明
 
-| 目录 / 模块 | 内容 |
-|---|---|
-| `spider-practice/` | Web 动态页面采集练习（Playwright 异步渲染、分页处理） |
-| `js-reverse-notes/` | JS 加密参数定位与本地复现思路笔记（已脱敏，不含目标站密钥与敏感协议） |
-| `fastapi-data-api/` | 轻量 FastAPI 服务：读取 MySQL 采集结果，提供 JSON 查询接口 |
+目录这些文件夹是相关的代码
 
 > ⚠️ 说明：涉及商业 APP / 站点协议细节的代码已本地脱敏，本仓库仅保留**分析思路、工具封装与可公开复现的练习代码**。
 
