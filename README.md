@@ -11,7 +11,7 @@
 | 爬虫框架 | Scrapy
 | 逆向分析 | DevTools 抓包 · JS 混淆还原 · execjs · Frida · Jadx |
 | 数据处理 | Pandas · NumPy · MySQL · Redis（去重 / 任务队列） |
-| 工程基础 | Git · Linux · Docker · Charles / Fiddler |
+| 工程基础 | Git · Linux · Charles / Fiddler |
 
 ## 📁 仓库说明
 
